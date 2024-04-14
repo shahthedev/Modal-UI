@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- css  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="modal.css">
+  <!-- css ended  -->
+
+  <!-- bootstrap js  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js ended -->
+
+  <!-- fonts   -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- fonts ended  -->
+
+  <title>Medical UI</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="d-flex justify-content-around flex-wrap">
+      <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+        data-bs-whatever="">Modal 1</button>
+      <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"
+        data-bs-whatever="modal2">Modal 2</button>
+      <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"
+        data-bs-whatever="modal3">Modal 3</button>
+        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop4"
+        data-bs-whatever="modal4">Modal 4</button>
+    </div>
+    <!-- Modal 1 Starts Here -->
+    <div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl ">
+        <div class="modal-content">
+          <div class="modal-header px-4">
+            <div class=" d-flex w-100 align-items-baseline">
+              <h5 class="modal-title" id="exampleModalLabel">Master's Experience - Dr. Antonio Newton</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+          </div>
+          <div class="modal-body px-4 max-h-75vh overflow-auto">
+            <div class="row">
+              <div class=" col-md-6 ">
+               <div class="title-main-parent">
+                <h4>
+                  Conditions, Pathologies and Goals
+                </h4>
+                <p>Listra para os quais o DR. Anthon Newton possui alguima recomendacao.</p>
+               </div>
+              </div>
+              <div class="col-md-6 d-flex justify-content-end mb-2">
+                <div class="search-select ">
+                  <input class="form-control form-control-sm" type="text" placeholder="Search"
+                    aria-label=".form-control-sm example">
+                  <i class="fas fa-search"></i>
+                </div>
+                <div class="select ms-2  ">
+                  <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                    <option selected>Ordem Alfabetica</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-2">
+              <div class="selected selected-suggestions ">
+                <button type="button" class="btn btn-dark rounded-pill" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="Inicio de sintomas de carencia hormonal pele seca, vagina etc.">Female Hormone
+                  Replacement</button>
+                <button type="button" class="btn btn-dark rounded-pill" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="Inicio de sintomas de carencia hormonal pele seca, vagina etc.">Menopause</button>
+              </div>
+            </div>
+            <div class="suggestions">
+              <div class="all-suggestion">
+                <button type="button" class="btn btn-secondary rounded-pill">Mentrual Irregularity</button>
+                <button type="button" class="btn btn-secondary rounded-pill">Autism</button>
+                <button type="button" class="btn btn-secondary rounded-pill">Fatigue/Chronic</button>
+                <button type="button" class="btn btn-secondary rounded-pill">Post Covid Syndrome</button>
+                <button type="button" class="btn btn-secondary rounded-pill">Slimming</button>
+                <button type="button" class="btn btn-secondary rounded-pill">Inicio de sintomas de carencia hormonal
+                  pele seca, vagina etc.</button>
+                <button type="button" class="btn btn-secondary rounded-pill">Hashimoto</button>
+                <button type="button" class="btn btn-secondary rounded-pill">Alteracoes do Fluxo Menstrual</button>
+                <button type="button" class="btn btn-secondary rounded-pill">Reposicao Hormonal Masculina </button>
+                <button type="button" class="btn btn-secondary rounded-pill">Sindrome Metabolica Obesidade,
+                  Hipertensao.</button>
+              </div>
+              <a href="" class="mt-2">Load more <i class="fa fa-chevron-down"></i></a>
+            </div>
+            <div class="mt-4  recommend recommanded-solution">
+              <div class="d-md-flex justify-content-between">
+                <div class="">
+                  <h4>
+                    Assertion of Conditions and Pathologies
+                  </h4>
+                  <p>Recomendacoes do Dr. Anthony Newton para confirmacao de uma ou mais Condicao / Patologia e
+                    Objectivo selecionados.</p>
+                </div>
+                <div class="side d-flex align-items-around">
+                  <button class="side">Side by Side</button>
+                </div>
+              </div>
+
+
+              <div class="row border-bottom mt-3">
+                <div class="col-lg-8 tooltip12">
+                  <h5>Estroges Dominance</h5>
+                  <a href="" data-bs-toggle="tooltip" data-bs-placement="top" title="Exibhir detalhes">Dosagem no
+                    periodo pre-menstrual, FSH norma na ref do laboratorio, LH normal na ref do laboratorio, ESTRADIOL
+                    abaixo da ref do lab...</a>
+                </div>
+
+                <div class="col-lg-2 col-6 d-lg-flex align-items-center text-center side">
+                  <i class="fa fa-file-lines me-2 mb-1"></i> <a href=""> Tests</a>
+                </div>
+                <div class="side col-lg-2 col-6 d-lg-flex align-items-center text-center">
+                  <button class="side " data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Adicionar aos Exames">Add</button>
+                </div>
+              </div>
+              <div class="row border-bottom mt-3">
+                <div class="col-lg-8">
+                  <h5>Estroges Deficiency</h5>
+                  <a href="" data-bs-toggle="tooltip" data-bs-placement="top" title="Exibhir detalhes">Dosagem no
+                    periodo pre-menstrual, FSH norma na ref do laboratorio, LH normal na ref do laboratorio, ESTRADIOL
+                    abaixo da ref do lab...</a>
+                </div>
+
+                <div class="col-lg-2 col-6 d-lg-flex align-items-center text-center side">
+                  <i class="fa fa-file-lines me-2 mb-1"></i> <a href=""> Tests</a>
+                </div>
+                <div class="side col-lg-2 col-6 d-lg-flex align-items-center text-center">
+                  <button class="side " data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Adicionar aos Exames">Add</button>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between mt-4">
+                <div class="">
+                  <h4>
+                    Recommended Treatment / Protocolos
+                  </h4>
+                  <p>Recomendacoes do Dr. Anthony Newton para confirmacao de uma ou mais Condicao / Patologia e
+                    Objectivo selecionados.</p>
+                </div>
+
+              </div>
+              <div class="col-lg-12 mt-4 border-bottom  ">
+                <h5 class="mb-3">Estroges Dominance</h5>
+              </div>
+              <div class="row border-bottom mt-3 ">
+                <div class="col-lg-8 ps-4">
+                  <a href="" data-bs-toggle="tooltip" data-bs-placement="top" title="Exibhir detalhes">Protocolo de
+                    Alternancias de Acidos Graxos Essenciais</a>
+                </div>
+
+                <div class="col-lg-2 col-6 d-lg-flex align-items-center text-center side">
+                  <i class="fa fa-file-lines me-2 mb-1"></i> <a href=""> Tests</a>
+                </div>
+                <div class="side col-lg-2 col-6 d-lg-flex align-items-center text-center">
+                  <button class="side " data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Adicionar aos Exames">Add</button>
+                </div>
+              </div>
+              <div class="row border-bottom mt-3 ">
+                <div class="col-lg-8 ps-4">
+                  <a href="" data-bs-toggle="tooltip" data-bs-placement="top" title="Exibhir detalhes">Orientacoes de
+                    Estilo de Vida para Defiencia Estro Genica</a>
+                </div>
+
+                <div class="col-lg-2 col-6 d-lg-flex align-items-center text-center side ">
+                  <i class="fa fa-file-lines me-2 mb-1"></i> <a href=""> Tests</a>
+                </div>
+                <div class="side col-lg-2 col-6 d-lg-flex align-items-center text-center">
+                  <button class="side " data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Adicionar aos Exames">Add</button>
+                </div>
+              </div>
+              <div class="col-lg-12 mt-4 border-bottom">
+                <h5 class="mb-3">Estroges Deficiency</h5>
+              </div>
+              <div class="row border-bottom mt-3">
+                <div class="col-lg-8  ps-4">
+                  <a href="" data-bs-toggle="tooltip" data-bs-placement="top" title="Exibhir detalhes">Protocolo de
+                    Alternancias de Acidos Graxos Essenciais</a>
+                </div>
+
+                <div class="col-lg-2 col-6 d-lg-flex align-items-center text-center side ">
+                  <i class="fa fa-file-lines me-2 mb-1"></i> <a href=""> Tests</a>
+                </div>
+                <div class="side col-lg-2 col-6 d-lg-flex align-items-center text-center">
+                  <button class="side " data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Adicionar aos Exames">Add</button>
+                </div>
+              </div>
+              <div class="row border-bottom mt-3 ">
+                <div class="col-lg-8 ps-4">
+                  <a href="" data-bs-toggle="tooltip" data-bs-placement="top" title="Exibhir detalhes">Orientacoes de
+                    Estilo de Vida para Defiencia Estro Genica</a>
+                </div>
+
+                <div class="col-lg-2 col-6 d-lg-flex align-items-center text-center side">
+                  <i class="fa fa-file-lines me-2 mb-1"></i> <a href=""> Tests</a>
+                </div>
+                <div class="side col-lg-2 col-6 d-lg-flex align-items-center text-center">
+                  <button class="side " data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Adicionar aos Exames">Add</button>
+                </div>
+              </div>
+              <div class="col-lg-12 mt-4 border-bottom d-flex align-items-center justify-content-between">
+                <h5>Estroges Deficiency</h5>
+                <div class="side d-flex mb-3">
+                  <button class="side">Side by Side</button>
+                </div>
+              </div>
+              <div class="row border-bottom mt-3 ">
+                <div class="col-lg-8 ps-4">
+                  <a href="" data-bs-toggle="tooltip" data-bs-placement="top" title="Exibhir detalhes">Protocolo de
+                    Alternancias de Acidos Graxos Essenciais</a>
+                </div>
+
+                <div class="col-lg-2 col-6 d-lg-flex align-items-center text-center side">
+                  <i class="fa fa-file-lines me-2 mb-1"></i> <a href=""> Tests</a>
+                </div>
+                <div class="side col-lg-2 col-6 d-lg-flex align-items-center text-center">
+                  <button class="side " data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Adicionar aos Exames">Add</button>
+                </div>
+              </div>
+              <div class="row border-bottom mt-3 ">
+                <div class="col-lg-8 ps-4">
+                  <a href="" data-bs-toggle="tooltip" data-bs-placement="top" title="Exibhir detalhes">Protocolo de
+                    Alternancias de Acidos Graxos Essenciais</a>
+                </div>
+
+                <div class="col-lg-2 col-6 d-lg-flex align-items-center text-center side">
+                  <i class="fa fa-file-lines me-2 mb-1"></i> <a href=""> Tests</a>
+                </div>
+                <div class="side col-lg-2 col-6 d-lg-flex align-items-center text-center">
+                  <button class="side " data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Adicionar aos Exames">Add</button>
+                </div>
+              </div>
+              <div class="row border-bottom mt-3 ">
+                <div class="col-lg-8 ps-4">
+                  <a href="" data-bs-toggle="tooltip" data-bs-placement="top" title="Exibhir detalhes">Protocolo de
+                    Alternancias de Acidos Graxos Essenciais</a>
+                </div>
+
+                <div class="col-lg-2 col-6 d-lg-flex align-items-center text-center side">
+                  <i class="fa fa-file-lines me-2 mb-1"></i> <a href=""> Tests</a>
+                </div>
+                <div class="side col-lg-2 col-6 d-lg-flex align-items-center text-center">
+                  <button class="side " data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Adicionar aos Exames">Add</button>
+                </div>
+              </div>
+              <div class="row border-bottom mt-3 ">
+                <div class="col-lg-8 ps-4">
+                  <a href="" data-bs-toggle="tooltip" data-bs-placement="top" title="Exibhir detalhes">Protocolo de
+                    Alternancias de Acidos Graxos Essenciais</a>
+                </div>
+
+                <div class="col-lg-2 col-6 d-lg-flex align-items-center text-center side">
+                  <i class="fa fa-file-lines me-2 mb-1"></i> <a href=""> Tests</a>
+                </div>
+                <div class="side col-lg-2 col-6 d-lg-flex align-items-center text-center">
+                  <button class="side " data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Adicionar aos Exames">Add</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+        
+            <div class="modal-footer px-4">
+              <button type="button" class="btn-submit btn btn-dark rounded-pill">Add to Appointment</button>
+            </div>
+          
+        </div>
+      </div>
+
+
+    </div>
+    <!-- Modal 1 Ends Here -->
+
+    <!-- Modal 2 Starts Here -->
+    <div class="modal fade" id="staticBackdrop2" tabindex="-1" aria-labelledby="modal2" aria-hidden="true">
+      <div class="modal-dialog modal-xl ">
+        <div class="modal-content">
+          <div class="modal-header px-4">
+            <div class=" d-flex w-100 align-items-center mt-2">
+              <h1 class="heading">Recommended Treatments and Protocols - Side by Side</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+          </div>
+          <div class="modal-body px-4 max-h-100vh">
+            <div class="row">
+              <div class=" col-md-12 d-flex border-bottom header">
+               <div class="col-lg-4">
+                <h1 class="heading mb-3">
+                    Estrogen Dominance
+                </h1>
+               </div>
+              </div>
+              
+            </div>
+            <div class=" mt-3 recommendation ">
+              <div class="border-bottom d-flex">
+                <div class="col-lg-4">
+                  <p class="p-heading">Protocolo de Alternancias de Acidos Graxos Essencias</p>
+                  <p class="p-paragraph">Primeira Fase do Ciclo <br>Ômega 3 1000mg 1 a duas cápsulas 2x ao dia após o almoço ou jantar, por 15 dias após o último dia da menstruação</p>
+                  <p class="p-paragraph mt-3">Segunda Fase do Ciclo <br>Óleo de Linhaça 3 1000mg 1 a duas cápsulas 2x ao dia após o almoço ou jantar, após o os 15 dias de ômega 3 até acabar a menstruação. Observação: O óleo de linhaça pode ser substituído por Gama Lift ou Óleo de Prímula ou Óleo de Borragem</p>
+                </div>
+                <div class="col-lg-4">
+                  <p class="p-heading">Protocolo de Uso de Progesterona na Segunda Fase do Ciclo</p>
+                  <p class="p-paragraph">Progesterona Lipofílica Oral de 20 a 50 mg (início ajusta dosagem até 50 mg conforme resultado clínico e laboratorial) à noite ao deitar por 10 a 15 dias antes da menstruação.</p>
+                </div>
+                <div class="col-lg-4 ">
+                  <p class="p-heading">Protocolo para Controle de Mastalgias</p>
+                  <p class="p-paragraph">Vitamina E 400mg <br>Vit A 5000UI <br>MIx de Tocoferol 200mg <br>1 dose ao dia1 dose ao dia</p>
+                </div>
+                <div class="col-lg-4 ">
+                  <p class="p-heading">Protocolo para Controle de Mastalgias</p>
+                  <p class="p-paragraph">Vitamina E 400mg <br>Vit A 5000UI <br>MIx de Tocoferol 200mg <br>1 dose ao dia1 dose ao dia</p>
+                </div>
+              </div>
+              <div class="d-flex mt-3 mb-3">
+                <div class="col-lg-4">
+                  <p class="heading">References</p>
+                  <p class="p-paragraph">SHARP, Merck. CORP, Dhohme. The Merck Manual: Professional Edition, Nineteenth Edition. New Jersey, USA: Janeiro de 2011.</p>
+                    <button type="button" class="btn-submit btn btn-dark rounded-pill w-100">Add to Appointment</button>
+                </div>
+                <div class="col-lg-4">
+                  <p class="heading">References</p>
+                  <p class="p-paragraph">SHARP, Merck. CORP, Dhohme. The Merck Manual: Professional Edition, Nineteenth Edition. New Jersey, USA: Janeiro de 2011.</p>
+                  <button type="button" class="btn-submit btn btn-dark rounded-pill w-100">Add to Appointment</button>
+                </div>
+                <div class="col-lg-4">
+                  <p class="heading">References</p>
+                  <p class="p-paragraph">SHARP, Merck. CORP, Dhohme. The Merck Manual: Professional Edition, Nineteenth Edition. New Jersey, USA: Janeiro de 2011.</p>
+                  <button type="button" class="btn-submit btn btn-dark rounded-pill w-100">Add to Appointment</button>
+                </div>
+                <div class="col-lg-4">
+                  <p class="heading">References</p>
+                  <p class="p-paragraph">SHARP, Merck. CORP, Dhohme. The Merck Manual: Professional Edition, Nineteenth Edition. New Jersey, USA: Janeiro de 2011.</p>
+                  <button type="button" class="btn-submit btn btn-dark rounded-pill w-100">Add to Appointment</button>
+                </div>
+
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+
+    </div>
+    <!-- Modal 2 Ends Here -->
+
+    <!-- Modal 3 Starts Here -->
+    <div class="modal fade" id="staticBackdrop3" tabindex="-1" aria-labelledby="modal3" aria-hidden="true">
+      <div class="modal-dialog modal-xl ">
+        <div class="modal-content">
+          <div class="modal-header px-4">
+            <div class=" d-flex w-100 align-items-center mt-2">
+              <h1 class="heading">Assertion of Conditions and Pathologies - Side by Side</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+          </div>
+          <div class="modal-body px-4 max-h-100vh">
+            <div class="recommendation container">
+              <div class=" col-md-12 d-flex border-bottom header">
+                <div class="col-lg-6">
+                <h1 class="heading mb-3">
+                  Female Hormone Replacement
+                </h1>
+                </div>
+                <div class="col-lg-6 ">
+                <h1 class="heading mb-3">
+                  Estrogen Dominance
+                </h1>
+                </div>
+              </div>
+              <div class="border-bottom d-flex mt-3">
+                <div class="col-lg-6">
+                  <p class="subheading">How to diagnose</p>
+                  <p class="p-paragraph mt-2">- Dosagem no período pré-menstrual <br>- FSH normal na ref do laboratório <br>- LH normal na ref do laboratório <br>- ESTRADIOL abaixo da ref do lab <br>- ESTRONA abaixo da ref do lab <br>- SHBG normal ou alta <br>- PROGES TERONA normal ou baixa <br>- TESTO TOTAL E LIVRE normal <br>- S-DHEA normal <br>- DHT normal</p>
+                </div>
+                <div class="col-lg-6">
+                  <p class="subheading">How to diagnose</p>
+                  <p class="p-paragraph mt-2">- Dosagem no período pré-menstrual <br>- FSH normal na ref do laboratório <br>- LH normal na ref do laboratório <br>- ESTRADIOL abaixo da ref do lab <br>- ESTRONA abaixo da ref do lab <br>- SHBG normal ou alta <br>- PROGES TERONA normal ou baixa <br>- TESTO TOTAL E LIVRE normal <br>- S-DHEA normal <br>- DHT normal</p>
+                </div>
+
+              </div>
+              <div class="d-flex mt-3 mb-3">
+                <div class="col-lg-6">
+                  <p class="subheading">References</p>
+                  <p class="p-paragraph mt-2">SHARP, Merck. CORP, Dhohme. The Merck Manual: Professional Edition, Nineteenth Edition. New Jersey, USA: Janeiro de 2011.</p>
+                  <div class="d-flex justify-content-center">
+                    <button type="button" class="btn-submit btn btn-dark rounded-pill mt-3">Add to Appointment</button>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <p class="subheading">How to diagnose</p>
+                  <p class="p-paragraph mt-2">SHARP, Merck. CORP, Dhohme. The Merck Manual: Professional Edition, Nineteenth Edition. New Jersey, USA: Janeiro de 2011.</p>
+                  <div class="d-flex justify-content-center">
+                    <button type="button" class="btn-submit btn btn-dark rounded-pill mt-3">Add to Appointment</button>
+                  </div>
+                </div>
+
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+
+    </div>
+    <!-- Modal 3 Ends Here -->             
+
+    <!-- Modal 4 Starts Here -->
+    <div class="modal fade" id="staticBackdrop4" tabindex="-1" aria-labelledby="modal4" aria-hidden="true">
+      <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          <div class="modal-header px-4">
+            <div class=" d-flex w-100 align-items-center mt-2">
+              <h1 class="heading">Recommended Treatments and Protocols</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+          </div>
+          <div class="modal-body px-4 max-h-100vh">
+            <div class="recommendation ">
+              <div class=" col-md-12 d-flex header">
+                <div class="col-lg-12">
+                <h1 class="heading mb-3">
+                  Estrogen Dominance
+                </h1>
+                </div>
+              </div>
+              <div class="border-bottom d-flex mt-3">
+                <div class="col-lg-12">
+                  <p class="p-heading">Protocolo de Alternâncias de Ácidos Graxos Essenciais</p>
+                  <p class="p-paragraph mt-2">Primeira Fase do Ciclo <br>Ômega 3 1000mg 1 a duas cápsulas 2x ao dia <br>após o almoço ou jantar, por 15 dias após o <br>último dia da menstruação</p>
+                  <p class="p-paragraph mt-2">Óleo de Linhaça 3 1000mg 1 a duas cápsulas <br>2x ao dia após o almoço ou jantar, após o os <br>15 dias de ômega 3 até acabar a menstruação. <br>Observação: O óleo de linhaça pode ser <br>substituído por Gama Lift ou Óleo de Prímula <br>ou Óleo de Borragem</p>
+
+                </div>
+
+              </div>
+              <div class="d-flex mt-3 mb-3">
+                <div class="col-lg-12">
+                  <p class="subheading">References</p>
+                  <p class="p-paragraph mt-2">SHARP, Merck. CORP, Dhohme. The Merck Manual: Professional Edition, Nineteenth Edition. New Jersey, USA: Janeiro de 2011.</p>
+                  <div class="d-flex justify-content-center">
+                    <button type="button" class="btn-submit btn btn-dark rounded-pill w-75 mt-3">Add to Appointment</button>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+
+    </div>
+    <!-- Modal 4 Ends Here -->         
+
+  </div>
+
+  </div>
+  </div>
+
+  <script type="text/javascript">
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+  </script>
+</body>
+
+</html>
